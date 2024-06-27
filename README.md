@@ -1,17 +1,17 @@
-## Books_app
+# Books_app
 
 This is a web application for managing books, featuring CRUD operations, built using React, Node.js, Nginx, and MySQL. Follow the steps below to set up the application on an AWS EC2 instance rds mysql.
 
-### Architecture 
+# Architecture 
 
-![Architectre Diagram](image.png)
+![Architectre Diagram](book_app_architecture.png)
 
-### Prerequisites
+# Prerequisites
 
 - Set up an AWS EC2 instance with AmazonLinux or Ubuntu.
 - Install Node.js, Git, and Nginx on the EC2 instance.
 
-### Installation
+## Installation
 
 1. Clone this repository on the EC2 instance:
 
@@ -19,7 +19,7 @@ This is a web application for managing books, featuring CRUD operations, built u
 git clone https://github.com/mr3xplorer/Books_app.git
 ```
 
-### Frontend Setup
+## Frontend Setup
 
 1. Navigate to the client directory:
 
@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-### Backend Setup
+## Backend Setup
 
 1. Navigate to the backend directory:
 
@@ -59,7 +59,7 @@ npm install
 node index.js
 ```
 
-### Connecting Frontend to Backend
+## Connecting Frontend to Backend
 
 In the client code:
 
@@ -68,7 +68,7 @@ In the client code:
   - `src/pages/Books.jsx`
   - `src/pages/Update.jsx`
 
-### Deployment with Nginx
+## Deployment with Nginx
 
 1. Start Nginx:
 
@@ -91,20 +91,16 @@ cd /home/ec2-user/backend
 node index.js
 ```
 
-### Accessing the Application
+## Accessing the Application
 
 - The client runs at `<ec2_ip>:3000`.
 - The backend runs at `<ec2_ip>:8800`.
 - Ensure to set `<ec2_ip>:8800` as the path in React to connect the backend to the frontend.
 
-### Repository Structure
+## Repository Structure
 
 - **client**: Frontend codebase.
 - **backend**: Backend codebase.
 - **<ec2_ip>**: Replace with your EC2 instance's IP address.
 
 Feel free to further customize and enhance this application according to your requirements.
-
-### Demo 
-
-![Demo of book app](test.mp4)
