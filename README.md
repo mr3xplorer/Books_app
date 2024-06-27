@@ -1,6 +1,10 @@
 ## Books_app
 
-This is a web application for managing books, featuring CRUD operations, built using React, Node.js, Nginx, and MySQL. Follow the steps below to set up the application on an AWS EC2 instance.
+This is a web application for managing books, featuring CRUD operations, built using React, Node.js, Nginx, and MySQL. Follow the steps below to set up the application on an AWS EC2 instance rds mysql.
+
+### Architecture 
+
+![Architectre Diagram](image.png)
 
 ### Prerequisites
 
@@ -99,4 +103,8 @@ node index.js
 - **backend**: Backend codebase.
 - **<ec2_ip>**: Replace with your EC2 instance's IP address.
 
-Feel free to further customize and enhance this application according to your requirements. If you encounter any issues, refer to the documentation or reach out for support.
+Feel free to further customize and enhance this application according to your requirements.
+
+### Demo 
+
+![Demo of book app](test.mp4)
